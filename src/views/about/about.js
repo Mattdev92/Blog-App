@@ -1,4 +1,4 @@
-import MainTemplate from 'templates/mainTemplate';
+import MainTemplate from 'templates/mainTemplate/mainTemplate';
 
 const About = () => {
   return (

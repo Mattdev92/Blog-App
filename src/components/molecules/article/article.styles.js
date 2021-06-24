@@ -17,3 +17,7 @@ export const ContentSection = styled.section`
   height: 200px;
   width: 100%;
 `;
+export const Image = styled.img`
+  width: auto;
+  height: 100px;
+`;

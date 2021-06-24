@@ -1,4 +1,4 @@
-import { Title } from 'components/organisms/nav/item/item.styles';
+import { Title } from 'components/organisms/sidebar/item/item.styles';
 
 const Item = ({ name }) => {
   return (

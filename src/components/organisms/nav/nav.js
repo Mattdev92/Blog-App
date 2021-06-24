@@ -1,15 +1,23 @@
-import { NavWrapper, ItemList } from 'components/organisms/nav/nav.styles';
-import Item from 'components/organisms/nav/item/item';
-import { itemNamesTab } from './nav-helpers';
+import {
+  NavWrapper,
+  ListWrapper,
+  ListItem,
+} from 'components/organisms/nav/nav.styles';
+import { icons } from 'components/organisms/nav/nav.helpers';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Nav = () => {
   return (
     <NavWrapper>
-      <ItemList>
-        {itemNamesTab.map((item) => (
-          <Item name={item}></Item>
-        ))}
-      </ItemList>
+      <ListWrapper>
+        {icons.map((item, i) => {
+          return (
+            <ListItem>
+              <FontAwesomeIcon icon={item} key={i} />
+            </ListItem>
+          );
+        })}
+      </ListWrapper>
     </NavWrapper>
   );
 };

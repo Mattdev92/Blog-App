@@ -4,10 +4,10 @@ import store from 'store/store';
 import { ApolloProvider } from '@apollo/client';
 import { client } from 'api/apolloClient';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import About from 'views/about';
-import News from 'views/news';
-import Cooperation from 'views/cooperation';
-import Main from 'views/main';
+import About from 'views/about/about';
+import News from 'views/news/news';
+import Cooperation from 'views/cooperation/cooperation';
+import Main from 'views/main/main';
 
 const Root = () => {
   return (
@@ -18,7 +18,7 @@ const Root = () => {
             <Route exact path="/">
               <Main />
             </Route>
-            <Route path="/Me">
+            <Route path="/About">
               <About />
             </Route>
             <Route path="/News">
