@@ -1,4 +1,4 @@
-# MEM
+# Blog
 
 This Project is a team work to create a blog with some CMS. Main aim is to practise new technologies with team work with Git and github. 
 
