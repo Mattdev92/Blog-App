@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const SidebarWrapper = styled.section`
   margin: 0;
-  padding: 0;
+  padding: 10px 0;
   width: 200px;
   height: calc(100vh - 30px);
   display: inline-flex;

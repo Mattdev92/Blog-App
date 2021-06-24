@@ -12,8 +12,8 @@ const Nav = () => {
       <ListWrapper>
         {icons.map((item, i) => {
           return (
-            <ListItem>
-              <FontAwesomeIcon icon={item} key={i} />
+            <ListItem key={i}>
+              <FontAwesomeIcon icon={item} />
             </ListItem>
           );
         })}

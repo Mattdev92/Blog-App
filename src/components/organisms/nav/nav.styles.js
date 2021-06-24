@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const NavWrapper = styled.nav`
   margin: 0;
-  padding: 0;
+  padding: 10px 0;
   display: inline-flex;
   width: calc(100vw - 200px);
   height: 30px;
