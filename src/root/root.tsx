@@ -9,7 +9,7 @@ import News from 'views/news/news';
 import Cooperation from 'views/cooperation/cooperation';
 import Main from 'views/main/main';
 
-const Root = () => {
+const Root: React.FC = () => {
   return (
     <ApolloProvider client={client}>
       <Provider store={store}>

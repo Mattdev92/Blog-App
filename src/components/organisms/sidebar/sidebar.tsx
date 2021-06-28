@@ -1,3 +1,4 @@
+import React from 'react';
 import {
   SidebarWrapper,
   ItemList,
@@ -6,7 +7,7 @@ import Item from 'components/organisms/sidebar/item/item';
 import { itemNamesTab } from './sidebar-helpers';
 import Logo from 'components/atoms/logo/logo';
 
-const Sidebar = () => {
+const Sidebar: React.FC = () => {
   return (
     <SidebarWrapper>
       <Logo />

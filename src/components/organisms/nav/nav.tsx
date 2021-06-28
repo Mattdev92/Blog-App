@@ -1,3 +1,4 @@
+import React from 'react';
 import {
   NavWrapper,
   ListWrapper,
@@ -6,7 +7,7 @@ import {
 import { icons } from 'components/organisms/nav/nav.helpers';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-const Nav = () => {
+const Nav: React.FC = () => {
   return (
     <NavWrapper>
       <ListWrapper>
