@@ -1,15 +1,17 @@
+import React from 'react';
 import {
   ArticleWrapper,
   ContentSection,
   Image,
 } from 'components/molecules/article/article.styles';
 import Title from 'components/atoms/title/title';
+import { ArticleTypes } from './article.types';
 
-const Article = ({ title, content, url, alt }) => {
+const Article: React.FC<ArticleTypes> = ({ title, content, url, alt }) => {
   return (
     <ArticleWrapper>
-      <Title>{title}</Title>
-      <Image src={url} alt={alt} size={16} />
+      <Title size={16}>{title}</Title>
+      <Image src={url} alt={alt} />
       <ContentSection>{content}</ContentSection>
     </ArticleWrapper>
   );

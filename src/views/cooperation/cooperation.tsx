@@ -1,6 +1,7 @@
+import React from 'react';
 import MainTemplate from 'templates/mainTemplate/mainTemplate';
 
-const Cooperation = () => {
+const Cooperation: React.FC = () => {
   return (
     <MainTemplate>
       <h2>Hello from Cooperation !</h2>

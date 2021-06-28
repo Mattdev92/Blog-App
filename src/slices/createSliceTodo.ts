@@ -1,11 +1,16 @@
 import { createSlice } from '@reduxjs/toolkit';
+import { InnitialStateType } from 'slices/createSliceTodo.types';
 
+const initialState: InnitialStateType = {
+  author: 'Mateusz',
+  names: ['Mateusz'],
+};
 const todosSlice = createSlice({
   name: 'todos',
-  initialState: ['asasa'],
+  initialState,
   reducers: {
     todoAdded(state, action) {
-      state.push(action.payload);
+      state.names.push(action.payload);
     },
   },
 });
